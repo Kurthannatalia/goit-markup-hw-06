@@ -32,6 +32,11 @@
           </li>
         </ul>
       </nav>
+      <button class="mobile-menu-open-burger" type="button">
+        <svg class="mobile-menu-icon" width="24" height="24" aria-label="mobile menu open icon ">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
       <address class="header-contact">
         <ul class="header-contact-item list">
           <li>
@@ -46,7 +51,7 @@
   </header>
   <main>
     <!--HERO SECTION-->
-    <section class="section-hero">
+    <section class="section-hero hidden">
       <div class="container">
         <h1 class="hero-tittle">Effective Solutions for Your Business</h1>
         <button type="button" class="modal-open-btn" data-modal-open>Order Service</button>
@@ -54,7 +59,7 @@
     </section>
 
     <!--FIRST SECTION-->
-    <section class="features">
+    <section class="features hidden">
       <div class="section-container container">
         <h2 class="visually-hidden">Features</h2>
         <ul class="features-list list">
@@ -115,7 +120,7 @@
     </section>
 
     <!--SECOND SECTION-->
-    <section class="our-team-section">
+    <section class="our-team-section hidden">
       <div class="container">
         <h2 class="teams-list">Our Team</h2>
         <ul class="list-img-list list">
@@ -290,7 +295,7 @@
     </section>
 
     <!--THIRD SECTION-->
-    <section class="our-portfolio">
+    <section class="our-portfolio hidden">
       <div class="container">
         <h2 class="portfolio-title">Our Portfolio</h2>
         <ul class="portfolio-list list">
@@ -390,7 +395,7 @@
   </main>
 
   <!--FOOTER-->
-  <footer class="footer-container-link">
+  <footer class="footer-container-link hidden">
     <div class="footer-container container">
       <div class="footer-content">
         <a href="./index.html" class="footer-logo link">Web<span class="footer-logo-part-light">Studio</span></a>
@@ -433,7 +438,7 @@
         </ul>
        </div>
         <!--SECTION SUBSCRIBE-->
-        <div class="form-container">
+        <div class="form-container hidden">
           <p class="form-subscribe">Subscribe</p>
           <form class="form-email">
             <label for="email" class="label-class">
@@ -450,7 +455,7 @@
     </div>
   </footer>
         <!--SECTION MODAL WINDOWS-->
-     <div class="container-modal-windows is-open" data-modal>
+     <div class="container-modal-windows is-open hidden" data-modal>
        <div class="modal-windows">
          <button class="open-modal" type="button" data-modal-close>
            <svg class="close-btn" width="8" height="8">
