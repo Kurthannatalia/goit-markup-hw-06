@@ -92,7 +92,8 @@ ol {
     justify-content: space-between;
 }
 
-.menu, .header-contact {
+.menu,
+.header-contact {
  display: none;
 }
 
@@ -130,14 +131,14 @@ ol {
     border: none;
     padding: 0;
     background-color: transparent;
-    line-height: 0;
+    /*line-height: 0;
     fill: #2e2f42;
-    line-height: 0;
+    line-height: 0;*/
 }
 
 .mobile-menu-icon {
     display: block;
-    fill: 2F2F37;
+    fill: #2F2F37;
 }
 
 
