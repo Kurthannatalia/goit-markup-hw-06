@@ -1,8 +1,8 @@
-/* обнулення секцій для точечної роботи*/
+/*--обнулення секцій для точечної роботи--*/
 .hidden {
     display: none;
 }
-/* знести цей клас по завершенні роботи */
+/*--знести цей клас по завершенні роботи--*/
 :root {
     --main-font-family: "Roboto", sans-serif;
     --secondary-font-family: "Raleway", sans-serif;
@@ -57,6 +57,19 @@ ol {
     background-color: var(--color-white, #ffffff);
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    clip-path: inset(100%);
+    clip: rect(0, 0, 0, 0);
+}
+
 /* Common */
 .container {
     width: 320px;
@@ -94,7 +107,7 @@ ol {
 
 .menu,
 .header-contact {
- display: none;
+    display: none;
 }
 
 .logo {
@@ -116,7 +129,7 @@ ol {
     color: var(--color-navy-blue);
 }
 
-/* .header-logo-link {
+.header-logo-link {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -125,15 +138,12 @@ ol {
     text-transform: uppercase;
     color: var(--color-iris, #4d5ae5);
     margin-right: 76px;
-}*/
+}
 
 .mobile-menu-open-burger {
     border: none;
     padding: 0;
     background-color: transparent;
-    /*line-height: 0;
-    fill: #2e2f42;
-    line-height: 0;*/
 }
 
 .mobile-menu-icon {
@@ -188,7 +198,7 @@ ol {
 .header-contact {
     font-style: normal;
     display: block;
-}
+}   
 
 .menu-link {
     font-family: var(--main-font-family);
@@ -231,7 +241,7 @@ ol {
     color: var(--color-ocean);
 }
 
-.menu {
+.header-contact {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -264,7 +274,7 @@ ol {
         
 }
 
-.menu {
+.header-contact {
     flex-direction: row;
     align-items: center;
     gap: 40px;
