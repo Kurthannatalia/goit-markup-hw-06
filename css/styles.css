@@ -373,8 +373,13 @@ ol {
     padding: 96px 0;
 }
 
+.footer-container {
+    
+}
+
 .footer-content {
    margin-bottom: 72px;
+   
 }
 
 .footer-logo {
@@ -506,6 +511,7 @@ ol {
 
 @media screen and (min-width:768px) {
 .footer-container {
+        flex-wrap: wrap;
         display: flex;
         gap: 72px 24px;
         align-items: baseline;
@@ -526,10 +532,6 @@ ol {
     display: inline-block;
 }
 
-.text-footer {
-    line-height: 24px;
-}
-
 .social-media-container {
 
 }
@@ -541,5 +543,8 @@ ol {
 .form-subscribe {
   text-align: left;
 }
-
+.form-container {
+    display: block;
+    unicode-bidi: isolate;
+}
 }
