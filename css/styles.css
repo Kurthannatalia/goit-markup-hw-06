@@ -371,6 +371,7 @@ ol {
     background-color: var(--color-navy-blue);
     padding: 96px 0;
 }
+
 .footer-content {
    margin-bottom: 72px;
 }
@@ -387,7 +388,6 @@ ol {
     margin-bottom: 16px;
     text-align: center;
 }
-
 
 .footer-logo-part-light {
     color: var(--color-cloud);
@@ -455,6 +455,7 @@ ol {
     margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
+    text-align: center;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #ffffff;
@@ -462,7 +463,10 @@ ol {
 
 .form-email {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
+    justify-content: center;
+
 }
 
 .input-email {
@@ -481,24 +485,52 @@ ol {
 }
 
 .btn-subscribe {
-    font-family: "Roboto", sans-serif;
-    min-width: 165px;
-    height: 40px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 16px;
     font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-    cursor: pointer;
-    background-color: #4D5AE5;
-    border: none;
     border-radius: 4px;
+    padding: 8px 24px;
+    width: 165px;
+    height: 40px;
+    background: #4d5ae5;
 }
 
 .btn-svg {
     margin-left: 16px;
     fill: var(--color-cloud);
 }
+
+@media screen and (min-width:768px) {
+.footer-container {
+        display: flex;
+        gap: 72px 24px;
+        align-items: baseline;
+        padding-left: 108px;
+    }
+
+.list-media {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.footer-logo-part-light {
+    display: inline-block;
+}
+
+.text-footer {
+    line-height: 24px;
+}
+
+.social-media-container {
+  
+
+}
+
