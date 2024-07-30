@@ -26,6 +26,7 @@
 
 button {
     cursor: pointer;
+    border: none;
 }
 
 h1,
@@ -530,8 +531,15 @@ ol {
 }
 
 .social-media-container {
-  
 
+}
+
+.social-media-text {
+  text-align: left;
+}
+
+.form-subscribe {
+  text-align: left;
 }
 
 }
