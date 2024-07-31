@@ -558,10 +558,7 @@ ol {
     margin-left: 16px;
     fill: var(--color-cloud);
   }
-  /* .form-container {
-    display: block;
-    unicode-bidi: isolate;
-  } */
+
 }
 
 @media screen and (min-width: 1158px) {
@@ -577,8 +574,7 @@ ol {
   .footer-content {
     margin-right: auto;
   }
-     .social-media-container{
-        margin-right: 96px;
-    }
+  .social-media-container {
+    margin-right: 96px;
+  }
 }
-/*================================== */
