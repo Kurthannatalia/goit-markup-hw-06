@@ -488,6 +488,7 @@ ol {
   width: 165px;
   height: 40px;
   background: #4d5ae5;
+  color: #ffffff;
 }
 
 .btn-svg {
@@ -581,7 +582,3 @@ ol {
     }
 }
 /*================================== */
-
-.btn-subscribe {
-  color: #ffffff;
-}
