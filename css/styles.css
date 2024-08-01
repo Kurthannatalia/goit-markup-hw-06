@@ -302,6 +302,13 @@ img {
   display: block;
 }
 
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
+}
+
 .mobile-menu-close-btn {
   width: 24px;
   height: 24px;
