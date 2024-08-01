@@ -296,6 +296,10 @@ img {
   margin-left: auto;
   margin-right: auto;
   top: 0;
+  d
+}
+.mobile-menu{
+  display: block;
 }
 
 .mobile-menu-close-btn {
