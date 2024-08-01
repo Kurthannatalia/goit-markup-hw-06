@@ -335,13 +335,7 @@ img {
 .mobile-nav-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: auto;
-}
-
-.mobile-nav-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: auto;
+  margin-bottom: 168px;
 }
 
 .menu-mobile {
@@ -402,6 +396,12 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #4d5ae5;
     border-radius: 50%;
+}
+.mobile-icon{
+  fill: #fff;
+} 
+.adress{
+  color: #404bbf;
 }
 /* Hero */
 .section-hero {
