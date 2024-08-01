@@ -51,7 +51,7 @@
   </header>
   <main>
     <!--HERO SECTION-->
-    <section class="section-hero hidden">
+    <section class="section-hero">
       <div class="hero-container container">
         <h1 class="hero-tittle">Effective Solutions for Your Business</h1>
         <button type="button" class="modal-open-btn" data-modal-open>Order Service</button>
@@ -59,7 +59,7 @@
     </section>
 
     <!--FIRST SECTION-->
-    <section class="features hidden">
+    <section class="features">
       <div class="section-container container">
         <h2 class="visually-hidden">Features</h2>
         <ul class="features-list list">
@@ -120,7 +120,7 @@
     </section>
 
     <!--SECOND SECTION-->
-    <section class="our-team-section hidden">
+    <section class="our-team-section">
       <div class="our-team-container container">
         <h2 class="teams-list">Our Team</h2>
         <ul class="list-img-list list">
@@ -299,14 +299,19 @@
     </section>
 
     <!--THIRD SECTION-->
-    <section class="our-portfolio hidden">
+    <section class="our-portfolio">
       <div class="container">
         <h2 class="portfolio-title">Our Portfolio</h2>
         <ul class="portfolio-list list">
           <li class="list-service link">
             <div class="overflow">
-              <img class="project-link link" src="./images/row1/banking-app-interface-concept.jpg" alt="Project 1"
-                width="360" height="300">
+              <picture>
+              <source media="(min-width: 1158px)"
+               srcset="./images/portfolio/portfolio-desk-1-min.jpg  1x, ./images/portfolio/portfolio-desk-1@2x-min.jpg 2x" type="image/jpg" />
+              <source media="(min-width: 768px)" srcset="./images/portfolio/portfolio-tab-1-min.jpg  1x, ./images/portfolio/portfolio-tab-1@2x-min.jpg 2x" type="image/jpg" />
+              <source media="(max-width: 767px)" srcset="./images/portfolio/portfolio-mob-1-min.jpg 1x, ./images/portfolio/portfolio-mob-1@2x-min.jpg 2x" type="image/jpg" />
+              <img class="project-link link" src="./images/row1/banking-app-interface-concept.jpg" alt="Banking App" width="360">
+              </picture>
               <p class="overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
                 Ecommerce
@@ -321,8 +326,13 @@
 
           <li class="list-service link">
             <div class="overflow">
-              <img class="project-link link" src="./images/row1/cashless-payment.jpg" alt="Project 2" width="360"
-                height="300">
+              <picture>
+                <source media="(min-width: 1158px)" srcset="./images/portfolio/portfolio-desk-2-min.jpg 1x, ./images/portfolio/portfolio-desk-2@2x-min.jpg  2x" type="image/jpg" />
+                <source media="(min-width: 768px)" srcset="./images/portfolio/portfolio-tab-2-min.jpg 1x, ./images/portfolio/portfolio-tab-2@2x-min.jpg  2x" type="image/jpg" />
+                <source media="(max-width: 767px)" srcset="./images/portfolio/portfolio-mob-2-min.jpg 1x, ./images/portfolio/portfolio-mob-2@2x-min.jpg  2x" type="image/jpg" />
+                <img class="project-link link" src="./images/row1/cashless-payment.jpg" alt="Cashless Payment" width="360" height="300">
+              </picture>
+              
               <p class="overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
                 Ecommerce App · Cloud Storage App
@@ -336,8 +346,15 @@
 
           <li class="list-service link">
             <div class="overflow">
-              <img class="project-link link" src="./images/row1/meditation-app.jpg" alt="Project 3" width="360"
-                height="300">
+              <picture> 
+                 <source media="(min-width: 1158px)"
+                  srcset="./images/portfolio/portfolio-desk-3-min.jpg 1x, ./images/portfolio/portfolio-desk-3@2x-min.jpg  2x" type="image/jpg" />
+                 <source media="(min-width: 768px)"
+                  srcset="./images/portfolio/portfolio-tab-3-min.jpg 1x, ./images/portfolio/portfolio-tab-3@2x-min.jpg  2x" type="image/jpg" />
+                 <source media="(max-width: 767px)"
+                  srcset="./images/portfolio/portfolio-mob-3-min.jpg 1x, ./images/portfolio/portfolio-mob-3@2x-min.jpg  2x" type="image/jpg" />
+                <img class="project-link link" src="./images/row1/meditation-app.jpg" alt="Project 3" width="360" height="300">
+              </picture>
               <p class="overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
                 Ecommerce App · Cloud Storage App
@@ -399,7 +416,7 @@
   </main>
 
   <!--FOOTER-->
-  <footer class="footer-container-link hidden">
+  <footer class="footer-container-link">
     <div class="footer-container container">
       <div class="footer-content">
         <a href="./index.html" class="footer-logo link">Web<span class="footer-logo-part-light">Studio</span></a>
