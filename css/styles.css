@@ -504,6 +504,10 @@ img {
 }
 
 @media screen and (min-width: 1158px) {
+  .hero-container {
+    margin: auto;
+  }
+
   .section-hero {
     padding: 188px 0;
     padding-top: 188px;
@@ -644,7 +648,7 @@ img {
   background-color: var(--color-white);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-  0px 2px 1px rgba(46, 47, 66, 0.08);
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .about-list-link {
@@ -721,29 +725,53 @@ img {
 
 /* Portfolio */
 .our-portfolio {
- padding: 96px 0;
+  padding: 96px 0;
 }
 
 .portfolio-title {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
-  margin-bottom: 72px;
   text-transform: capitalize;
-  color: var(--color-navy-blue);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 72px;
 }
+
+.description-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #2e2f42;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
 .portfolio-list {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  background-color: var(--color-white, #ffffff);
+  background-color: var(--color-white, #ffffff); */
+  display: flex;
+  gap: 48px 24px;
+  flex-wrap: wrap;
+}
+
+.service-container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .list-service {
-  width: calc((100% - 48px) / 3);
+  /* width: calc((100% - 48px) / 3);
   position: relative;
-  width: 288px;
+  width: 288px; */
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .project-link {
@@ -752,9 +780,35 @@ img {
   height: auto;
 }
 .overlay {
-  display: none;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #434455;
+  letter-spacing: 0.02em;
+
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  height: 100%;
+  width: 100%;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #4d5ae5;
+  border: 1px solid #e7e9fc;
+  transform: translateY(100%);
 }
-.service-container {
+
+.overflow {
+  position: relative;
+  overflow: hidden;
+}
+
+.list-service:hover .overlay {
+  transform: translateY(0%);
+}
+/* .service-container {
   padding: 32px 16px;
   border: 1px solid var(--color-cornflower);
   border-top: none;
@@ -763,21 +817,39 @@ img {
 .description-title {
   font-weight: 500;
   margin-bottom: 8px;
-}
+} */
 
 @media screen and (min-width: 768px) {
+  .portfolio-list {
+    row-gap: 72px;
+  }
+
   .list-service {
-    width: calc((100% - 48px) / 2);
+    /* width: calc((100% - 48px) / 2); */
+    width: 356px;
   }
 }
 
 @media screen and (min-width: 1157px) {
+  .our-portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
   portfolio-list {
     gap: 48px 24px;
   }
+
   .list-service {
     width: 360px;
+    box-shadow: none;
   }
+
+  .list-service:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+      0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+  /* 
   .overlay {
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -814,7 +886,7 @@ li:hover .overlay {
 .overflow {
   position: relative;
   overflow: hidden;
-}
+} */
 }
 /* Portfolio End */
 
@@ -934,6 +1006,8 @@ li:hover .overlay {
 }
 
 .btn-subscribe {
+  width: 165px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -943,7 +1017,7 @@ li:hover .overlay {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
-  background-color: #4D5AE5;
+  background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1120,7 +1194,7 @@ li:hover .overlay {
   padding: 0;
   line-height: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   right: 24px;
   top: 24px;
@@ -1135,7 +1209,6 @@ li:hover .overlay {
   align-items: center;
   justify-content: center;
 }
-
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
@@ -1323,16 +1396,14 @@ li:hover .overlay {
 
 @media screen and (min-width: 768px) {
   .modal-windows {
-   width: 408px;
-   min-height: 584px;
-   padding: 72px 24px 24px 24px;
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
   }
 
   .modal-accept-privacy-check {
-   display: block;
-      
-    }
- 
+    display: block;
+  }
 }
 
 /* Section Modal Windows End */

@@ -278,9 +278,6 @@
   transform: translateY(0);
 }
 
-li:hover .overlay {
-  transform: translateY(0%);
-}
 
 .overflow {
   position: relative;
