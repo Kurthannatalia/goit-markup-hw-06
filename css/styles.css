@@ -284,7 +284,6 @@ img {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   position: fixed;
   background-color: #fff;
   color: #2e2f2e;
@@ -838,8 +837,6 @@ img {
   padding: 96px 0;
 }
 
-.footer-container {
-}
 
 .footer-content {
   margin-bottom: 72px;
@@ -1314,5 +1311,29 @@ img {
     display: block;
   }
 }
+
+ @media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+screen and (min-resolution: 2dppx) and (max-width: 1158px),
+screen and (min-device-pixel-ratio:2) and (min-width: 1158px) {
+  .section-hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-x2.jpg);
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (max-width: 768px),
+screen and (min-device-pixel-ratio:2) and (min-width: 768px) {
+  .section-hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(..//images/hero/hero-bg-desk-2x.jpg);
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 768px),
+screen and (min-resolution: 2dppx) and (max-width: 768px),
+screen and (min-device-pixel-ratio:2) and (max-width: 768px) {
+  .section-hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero-bg-mob-2x.jpg);
+  }
+} */
 
 /* Section Modal Windows End */
